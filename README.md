@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Collaborative Ladders
 
 ## Getting Started
 
@@ -34,3 +34,16 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+# TODO
+
+- View individual status on root
+- View individual profile on root
+- Store user id in local storage
+- Join or create room with any URL
+  - Upon entering a `/{url}`, check if the room exists
+    - Yes -> check if user is in room, prompt to join
+    - No -> ask to create room, add invite prompt
+- View profile of people in room
+- View progress for people in a room
+- Last seen status for people in room
