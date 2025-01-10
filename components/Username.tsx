@@ -27,7 +27,7 @@ function Username() {
                 onChange={handleChange}
             />
             <button type="submit" className="p-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full max-w-md">
-                Type Username
+                Set Username
             </button>
         </form>
     );

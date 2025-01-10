@@ -38,7 +38,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 # TODO
 
 - View individual status on root
-- View individual profile on root
+- View individual profile on root (done)
 - Store user id in local storage
 - Join or create room with any URL
   - Upon entering a `/{url}`, check if the room exists
