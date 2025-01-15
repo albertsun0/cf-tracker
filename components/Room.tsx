@@ -1,11 +1,14 @@
 'use client'
 import { ChangeEvent, FormEvent, useState } from "react";
-import { createClient } from '@supabase/supabase-js'
+import { createClient } from '@supabase/supabase-js';
+import { useRouter } from 'next/navigation';
 
-const supabaseUrl = process.env.SUPABASE_URL as string;
-const supabaseAnonKey = process.env.PUBLIC_ANON_KEY as string;
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL as string;
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY as string;
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
+
 function Room() {
+    const router = useRouter();
     const [name, setName] = useState<string>("");
     function handleChange(event: ChangeEvent<HTMLInputElement>): void {
         setName(event.target.value);
@@ -16,6 +19,7 @@ function Room() {
             if (name === "") return;
             const {data, error} = await supabase.from('rooms').insert({name: `${name}`})
             setName("");
+            router.push(`/${name}`);
         }
 
     return (
