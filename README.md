@@ -37,9 +37,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 # TODO
 
-- View individual status on root
-- View individual profile on root
-- Store user id in local storage
+- View individual status on root  (in progress/fix Form component, more general use)
+- View individual profile on root (done)
+- Store user id in local storage (done ,should we make cookie for ID as well)
 - Join or create room with any URL
   - Upon entering a `/{url}`, check if the room exists
     - Yes -> check if user is in room, prompt to join
